@@ -1,16 +1,24 @@
 import { CaretRight, DiscordLogo, FileArrowDown, Image, Lightning } from "phosphor-react";
 import Footer from "./Footer";
+import { Player, Youtube, DefaultUi } from "@vime/react";
+
+import '@vime/core/themes/default.css'
 
 export default function Video () {
   return (
     <div className="flex-1">
       <div className="bg-black flex justify-center">
-        <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video"></div>
+        <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video">
+          <Player>
+            <Youtube videoId="99okStmx-7c"/>
+            <DefaultUi />
+          </Player>
+        </div>
       </div>
 
-      <div className=" px-8 pt-8 max-w-[1100px] mx-auto">
-        <div className="flex items-start gap-16">
-          <div className="flex-1">
+      <div className=" px-8 pt-8 max-w-[1100px]  mx-auto">
+        <div className="flex items-start gap-16 max-[1000px]:flex-col ">
+          <div className="flex-1 ">
             <h1 className="text-2xl font-bold mb-4">
               Masterclass React | Comece sua especialização aqui
             </h1>
@@ -49,7 +57,7 @@ export default function Video () {
             </a>
           </div>
         </div>
-        <div className="gap-8 mt-20 grid grid-cols-2 mb-20">
+        <div className="gap-8 mt-20 grid grid-cols-2 mb-20 max-[1000px]:grid-cols-none">
           <a href="#" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
             <div className="bg-green-700 h-full flex p-6 items-center">
               <FileArrowDown size={40}/>
