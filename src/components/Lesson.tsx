@@ -53,7 +53,7 @@ export default function Lesson (props: LessonProps) {
         </div>
       </a>
       ): (
-        <div className='cursor-not-allowed' aria-disabled={'true'}>
+        <div className='cursor-not-allowed'>
         <span className="text-gray-300">
           {availableDateFormat}
         </span>
