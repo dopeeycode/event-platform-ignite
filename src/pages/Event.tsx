@@ -13,7 +13,7 @@ export default function Event () {
       <Header />
       <main className="flex flex-1">
         { slug ? 
-          <Video /> 
+          <Video lessonSlug={slug}/> 
         : 
           <Welcome /> 
         }
