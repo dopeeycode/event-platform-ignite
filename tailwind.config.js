@@ -4,6 +4,9 @@ export default {
     './src/**/*.{html,js,tsx}',
   ],
   theme: {
+    backgroundImage: {
+      blur: 'url(/src/assets/blur-bg.png)'
+    },
     extend: {
       fontFamily: {
         sans: 'Roboto, sans-serif',
