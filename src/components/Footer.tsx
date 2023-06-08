@@ -17,7 +17,7 @@ export default function Footer(){
             href="https://github.com/dopeeycode"
             className="underline ml-1 text-green-500"
           >
-            @dopeeydev
+            @dopeeycode
           </a>
         </p>
       </div>
