@@ -1,4 +1,5 @@
 import Logo from "../components/Logo";
+import codeMockupIMG from '../assets/code-mockup.png'
 
 export default function Subscribe() {
   return (
@@ -42,7 +43,7 @@ export default function Subscribe() {
         </div>
       </div>
 
-      <img src="/src/assets/code-mockup.png" className="mt-10" alt="" />
+      <img src={codeMockupIMG} className="mt-10" alt="" />
     </div>
   )
 }
